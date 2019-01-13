@@ -66,6 +66,9 @@ public class MainFragment extends FragmentEx {
 		super.onCreate(savedInstanceState);
 
 		if(savedInstanceState != null) {
+
+			// This is where all fragments are being initialized
+			// Hello
 			featuredVideosFragment = (FeaturedVideosFragment) getChildFragmentManager().getFragment(savedInstanceState, FEATURED_VIDEOS_FRAGMENT);
 			mostPopularVideosFragment = (MostPopularVideosFragment) getChildFragmentManager().getFragment(savedInstanceState, MOST_POPULAR_VIDEOS_FRAGMENT);
 			subscriptionsFeedFragment = (SubscriptionsFeedFragment)getChildFragmentManager().getFragment(savedInstanceState, SUBSCRIPTIONS_FEED_FRAGMENT);
